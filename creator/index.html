@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CREATOR DASHBOARD</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      background-image: url("img/honey_im_subtle.png");
+    }
+    #loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('img/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+      opacity: 1;
+    }
+    .navbar-dark {
+      background-color: #003366; /* Dark blue color */
+    }
+    .btn-dark-blue {
+      background-color: #003366; /* Dark blue color */
+      border-color: #003366;     /* Match the border color */
+      color: #ffffff;            /* White text color for contrast */
+    }
+    .btn-dark-blue:hover {
+      background-color: #002244; /* Slightly darker blue on hover */
+      border-color: #002244;     /* Match the border color on hover */
+    }
+  </style>
+</head>
+
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+
+  <!-- Start your project here-->
+  <!-- Navbar -->
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/GSLL.png" width="33px" height="33px">
+      <font color="#74e874"> </font>GOA <font color="#74e874"> </font>SHIPYARD <font color="#74e874"> </font>LIMITED
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <!-- Add any additional navbar items here -->
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+  
+  <br><br>
+
+  <!-- Employee Info Card -->
+  <div class="container col-md-6">
+    <!-- Card -->
+    <div class="card">
+      <div id="loader"></div>
+      <!-- Card body -->
+      <div class="card-body text-center">
+        <h4 class="py-4">CREATOR DASHBOARD</h4>
+        <!-- Add employee information here -->
+        <p>Welcome, Employee! Please click the button below to access your dashboard.</p>
+        <a href="./dashboard.php" class="btn btn-dark-blue btn-lg">Go to Dashboard</a>
+      </div>
+      <!-- Card body -->
+    </div>
+    <!-- Card -->
+  </div>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- Loader script -->
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      setTimeout(function() {
+        $('#loader').fadeOut('slow');
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
